@@ -1,0 +1,17 @@
+php_flag file_uploads On
+php_value upload_tmp_dir temporarydir
+php_value upload_max_filesize 50M
+php_value post_max_size 50M
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+RewriteCond $1 !^(index\.php|img|css|js|audiojs|uploadify|foto|robot\.txt)
+RewriteRule ^(.*)$ /index.php/$1 [L]
+</IfModule>
+
+<IfModule !mod_rewrite.c>
+    # If we don't have mod_rewrite installed, all 404's
+    # can be sent to index.php, and everything works as normal.
+    # Submitted by: ElliotHaughin
+
+    ErrorDocument 404 /index.php
+</IfModule>

@@ -1,0 +1,10 @@
+.shadow-bt_form{height: 141px}
+
+.nav:hover{text-decoration: underline}
+.baner{float: left;width: 482px; padding-bottom: 35px; height: 224px}
+.pading{padding-right: 30px}
+.big_box_top{float:left;position:relative;padding-top:6px; width:486px;background-image: url("../img/big_top_baner.png"); background-repeat: no-repeat;background-position:  left top}
+.big_box_buttom{height:234px;float:left;position:relative; width:486px;background-image: url("../img/big_bt_baner.png"); background-repeat: no-repeat;background-position:  left bottom}
+.big_box_l_r{float: left;position:relative; width:486px;background-image: url("../img/big_fon_baner.png"); background-repeat: repeat-y;background-position:  left top}
+.imeg img{opacity:80;filter:alpha(opacity=85)}
+.imeg img:hover{opacity:100;filter:alpha(opacity=100)}
